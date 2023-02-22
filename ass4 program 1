@@ -1,0 +1,19 @@
+//palindrome or not
+#include<stdio.h>
+void  main()
+{ 
+  int   tem,n,r,sum=0;
+  printf("enter a number:");
+  scanf("%d",&n);
+  tem=n;
+  while(n>0)
+  { 
+      r=n%10;
+      sum=(sum*10)+r;
+      n=n/10;
+  }
+  if(sum==tem)
+  printf("number is palindrome:%d",tem);
+  else
+  printf("not a palindrome:%d",tem);
+}
